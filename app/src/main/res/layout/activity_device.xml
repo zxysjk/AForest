@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ba3"
+    tools:context=".device">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="设备硬件"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:text="网络信息"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:id="@+id/lianwang"
+                    style="@style/Item.Edit"
+                    android:hint="联网方式编号" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联网方式编号" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:id="@+id/lianwangname"
+                    style="@style/Item.Edit"
+                    android:hint="联网方式" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="联网方式" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:id="@+id/imei"
+                    style="@style/Item.Edit"
+                    android:hint="IMEI"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系统版本" />
+
+                <TextView
+                    android:id="@+id/deviceversion"
+                    style="@style/Item.Edit"
+                    android:hint="系统版本" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IMSI" />
+
+                <TextView
+                    android:id="@+id/imsi"
+                    style="@style/Item.Edit"
+                    android:hint="IMSI" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码" />
+
+                <TextView
+                    android:id="@+id/number"
+                    style="@style/Item.Edit"
+                    android:hint="手机号码" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机卡序列号" />
+
+                <TextView
+                    android:id="@+id/simserial"
+                    style="@style/Item.Edit"
+                    android:hint="序列号" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="运营商" />
+
+                <TextView
+                    android:id="@+id/simoperator"
+                    style="@style/Item.Edit"
+                    android:hint="simoperator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="运营商名字" />
+
+                <TextView
+                    android:id="@+id/simoperatorname"
+                    style="@style/Item.Edit"
+                    android:hint="simOperatorName" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="国家iso代码" />
+
+                <TextView
+                    android:id="@+id/simcountryiso"
+                    style="@style/Item.Edit"
+                    android:hint="国家iso代码" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="网络类型编号" />
+
+                <TextView
+                    android:id="@+id/workType"
+                    style="@style/Item.Edit"
+                    android:hint="网络类型"
+                    android:inputType="number" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机卡国家" />
+
+                <TextView
+                    android:id="@+id/netcountryiso"
+                    style="@style/Item.Edit"
+                    android:hint="手机卡国家"
+                    android:inputType="number" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="网络运营商类型" />
+
+                <TextView
+                    android:id="@+id/netoperator"
+                    style="@style/Item.Edit"
+                    android:hint="网络运营商类型"
+                    android:inputType="number" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="网络类型名" />
+
+                <TextView
+                    android:id="@+id/netoperatorname"
+                    style="@style/Item.Edit"
+                    android:hint="网络类型名"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+
+            <!--   <RelativeLayout style="@style/Item.Layout">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="网络类型" />
+
+               <TextView
+                   android:id="@+id/wl"
+                   style="@style/Item.Edit"
+                   android:hint="网络类型"
+                   android:inputType="number" />
+           </RelativeLayout>
+
+       -->
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="固件版本" />
+
+                <TextView
+                    android:id="@+id/radiovis"
+                    style="@style/Item.Edit"
+                    android:ems="10"
+                    android:hint="固件版本" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mac地址" />
+
+                <TextView
+                    android:id="@+id/wifimac"
+                    style="@style/Item.Edit"
+                    android:hint="mac地址" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="无线路由器名" />
+
+                <TextView
+                    android:id="@+id/getssid"
+                    style="@style/Item.Edit"
+                    android:hint="无线路由器名" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="无线路由器地址" />
+
+                <TextView
+                    android:id="@+id/getbssid"
+                    style="@style/Item.Edit"
+                    android:hint="无线路由器地址" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="蓝牙地址" />
+
+                <TextView
+                    android:id="@+id/bluemac"
+                    style="@style/Item.Edit"
+                    android:hint="蓝牙地址" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="蓝牙名称" />
+
+                <TextView
+                    android:id="@+id/bluname"
+                    style="@style/Item.Edit"
+                    android:hint="蓝牙" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Andrlid ID" />
+
+                <TextView
+                    android:id="@+id/andrlid_id"
+                    style="@style/Item.Edit"
+                    android:hint="Android ID" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="串口序列号" />
+
+                <TextView
+                    android:id="@+id/serial"
+                    style="@style/Item.Edit"
+                    android:hint="串口序列号" />
+
+            </RelativeLayout>
+
+            <!--间隔符-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="系统信息"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="品牌" />
+
+                <TextView
+                    android:id="@+id/brand"
+                    style="@style/Item.Edit"
+                    android:hint="品牌" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="get" />
+
+                <TextView
+                    android:id="@+id/get"
+                    style="@style/Item.Edit"
+                    android:hint="get" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="osVersion" />
+
+                <TextView
+                    android:id="@+id/osVersion"
+                    style="@style/Item.Edit"
+                    android:hint="osVersion" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="描述build的标签" />
+
+                <TextView
+                    android:id="@+id/tags"
+                    style="@style/Item.Edit"
+                    android:hint="描述build的标签" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备名" />
+
+                <TextView
+                    android:id="@+id/device"
+                    style="@style/Item.Edit"
+                    android:hint="设备名" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="主板引导程序" />
+
+                <TextView
+                    android:id="@+id/bootloader"
+                    style="@style/Item.Edit"
+                    android:hint="主板引导程序" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系统版本" />
+
+                <TextView
+                    android:id="@+id/release"
+                    style="@style/Item.Edit"
+                    android:hint="系统版本" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系统版本值" />
+
+                <TextView
+                    android:id="@+id/sdk"
+                    style="@style/Item.Edit"
+                    android:hint="系统版本值" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系统的API级别" />
+
+                <TextView
+                    android:id="@+id/sdk_INT"
+                    style="@style/Item.Edit"
+                    android:hint="系统的API级别" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="固件开发版本代号" />
+
+                <TextView
+                    android:id="@+id/codename"
+                    style="@style/Item.Edit"
+                    android:hint="固件开发版本代号" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="源码控制版本号" />
+
+                <TextView
+                    android:id="@+id/incremental"
+                    style="@style/Item.Edit"
+                    android:hint="源码控制版本号" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CPU型号" />
+
+                <TextView
+                    android:id="@+id/cpu"
+                    style="@style/Item.Edit"
+                    android:hint="CPU型号" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cpu指令集" />
+
+                <TextView
+                    android:id="@+id/cpuabi"
+                    style="@style/Item.Edit"
+                    android:hint="cpu指令集" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cpu指令集2" />
+
+                <TextView
+                    android:id="@+id/cpuabi2"
+                    style="@style/Item.Edit"
+                    android:hint="" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="主板" />
+
+                <TextView
+                    android:id="@+id/board"
+                    style="@style/Item.Edit"
+                    android:hint="主板" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="型号" />
+
+                <TextView
+                    android:id="@+id/model"
+                    style="@style/Item.Edit"
+                    android:hint="型号" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="产品名称" />
+
+                <TextView
+                    android:id="@+id/product"
+                    style="@style/Item.Edit"
+                    android:hint="型号" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备版本类型" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/Item.Edit"
+                    android:hint="设备版本类型" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备用户名" />
+
+                <TextView
+                    android:id="@+id/user"
+                    style="@style/Item.Edit"
+                    android:hint="设备用户名" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="显示屏幕参数" />
+
+                <TextView
+                    android:id="@+id/disply"
+                    style="@style/Item.Edit"
+                    android:hint="显示屏幕参数" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="硬件名称" />
+
+                <TextView
+                    android:id="@+id/hardware"
+                    style="@style/Item.Edit"
+                    android:hint="硬件名称" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设备主机地址" />
+
+                <TextView
+                    android:id="@+id/host"
+                    style="@style/Item.Edit"
+                    android:hint="设备主机地址" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="制造商" />
+
+                <TextView
+                    android:id="@+id/changshang"
+                    style="@style/Item.Edit"
+                    android:hint="制造商" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机类型" />
+
+                <TextView
+                    android:id="@+id/phonetype"
+                    style="@style/Item.Edit"
+                    android:hint="手机类型" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机卡状态" />
+
+                <TextView
+                    android:id="@+id/simstate"
+                    style="@style/Item.Edit"
+                    android:hint="手机卡状态" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/b_id"
+                    style="@style/Item.Edit"
+                    android:hint="设备版本号" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="内网IP" />
+
+                <TextView
+                    android:id="@+id/ip"
+                    style="@style/Item.Edit"
+                    android:hint="内网IP" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Build时间" />
+
+                <TextView
+                    android:id="@+id/gjtime"
+                    style="@style/Item.Edit"
+                    android:hint="Build时间" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="指纹信息" />
+
+                <TextView
+                    android:id="@+id/fingerprint"
+                    style="@style/Item.Edit"
+                    android:hint="指纹" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="屏幕信息"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机内置宽度" />
+
+                <TextView
+                    android:id="@+id/width"
+                    style="@style/Item.Edit"
+                    android:hint="手机内置宽度" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="手机内置高度" />
+
+                <TextView
+                    android:id="@+id/height"
+                    style="@style/Item.Edit"
+                    android:hint="手机内置高度" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="宽度分辨率" />
+
+                <TextView
+                    android:id="@+id/xwidth"
+                    style="@style/Item.Edit"
+                    android:hint="宽度分辨率" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="高度分辨率" />
+
+                <TextView
+                    android:id="@+id/xheight"
+                    style="@style/Item.Edit"
+                    android:hint="高度分辨率" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DPI" />
+
+                <TextView
+                    android:id="@+id/dpi"
+                    style="@style/Item.Edit"
+                    android:hint="dpi" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="屏幕密度" />
+
+                <TextView
+                    android:id="@+id/density"
+                    style="@style/Item.Edit"
+                    android:hint="屏幕密度" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="x像素" />
+
+                <TextView
+                    android:id="@+id/xdpi"
+                    style="@style/Item.Edit"
+                    android:hint="x像素" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Y像素" />
+
+                <TextView
+                    android:id="@+id/ydpi"
+                    style="@style/Item.Edit"
+                    android:hint="Y像素" />
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/Item.Layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="字体缩放比例" />
+
+                <TextView
+                    android:id="@+id/scaledDensity"
+                    style="@style/Item.Edit"
+                    android:hint="字体缩放比例" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

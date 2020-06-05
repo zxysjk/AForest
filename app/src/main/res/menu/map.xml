@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.aforest.bdmap" >
+    >
+    <item android:id="@+id/location"
+        android:showAsAction="ifRoom|withText"
+        android:title="定位"></item>
+
+</menu>

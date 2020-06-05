@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba3"
+    tools:context=".userRate">
+
+
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@id/line1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textRating"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@id/textRating"
+        android:isIndicator="true"
+        android:progressTint="@color/yellow" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginTop="17dp"
+        android:text="@string/tips3"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/back" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:background="#e0000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/tree" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/apphead"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textView9"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_marginBottom="5dp"
+        android:text="@string/copyright"
+        android:textColor="@color/gray_cc"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textRatingNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/textRating"
+        android:layout_below="@id/textRating"
+        android:layout_marginTop="7dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/textRatingNumber"
+        android:layout_marginTop="7dp"
+        android:background="@color/darkgray" />
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:fadeScrollbars="false">
+
+        <TableLayout
+            android:layout_width="332dp"
+            android:layout_height="146dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="76dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

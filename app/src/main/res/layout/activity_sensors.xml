@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ba3"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sensor"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="支持的传感器列表"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sensorlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:height="150dp" />
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sensorname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="加速度传感器"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonPe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计步器" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/xAxis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/yAxis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/zAxis"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sensornameO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="方向传感器"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonCom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="指南针" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/xAxisO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/yAxisO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/zAxisO"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/sensorMag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="磁场传感器"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/xMag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/yMag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/zMag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/sensorGyroScope"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="螺旋仪传感器"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/xGyro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/yGyro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/zGyro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/sensorGravity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="重力传感器"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/xGrav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/yGrav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/zGrav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sensor_light0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="光传感器"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+
+            <TextView
+                android:id="@+id/sensor_light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/whitesmoke" />
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="指南针"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16sp" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/whitesmoke" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/white">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/compass"-->
+                    <!--android:layout_width="150dp"-->
+                    <!--android:layout_height="150dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="35dp"-->
+                    <!--android:src="@drawable/nor1" />-->
+
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

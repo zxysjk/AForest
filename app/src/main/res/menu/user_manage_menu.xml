@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.exdatebase.MainActivity" >
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:title="删除"/>
+    <item
+        android:id="@+id/modify"
+        android:orderInCategory="300"
+        android:showAsAction="ifRoom"
+        android:title="修改资料"/>
+
+    <item
+        android:id="@+id/passAuthMana"
+        android:orderInCategory="400"
+        android:showAsAction="ifRoom"
+        android:title="密码及权限"/>
+
+</menu>

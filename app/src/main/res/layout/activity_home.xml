@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ba6"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/main_table"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="297dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:backgroundTint="@color/ghostwhite"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my2" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:backgroundTint="@color/ghostwhite"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/d2" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my5" />
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my7" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my4" />
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/my6" />
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:backgroundTint="@color/ghostwhite"
+                android:background="#00000000"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/map" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculator"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/time"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/piano"
+
+    tools:context=".Main.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/apphead"
+        android:textColor="@color/mintcream"
+        android:textSize="29sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/textView0"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="175dp"
+        android:background="#e0000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/tree" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/textViewProg"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:id="@+id/textViewProgHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/progressBarWel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:text="系统初始化中..."
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewProg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/progressBarWel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:text="100%"
+        android:textColor="@color/white" />
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="0dp"
+        android:background="#e0000000"
+        android:scaleType="centerCrop"
+
+        app:srcCompat="@drawable/darksky" />
+        -->
+
+
+</RelativeLayout>

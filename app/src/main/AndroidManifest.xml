@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aforest">
+    <!-- 获取设备权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ikQcjK392FxU7ub4OozSNGb5pjfuol5w" />
+
+        <activity android:name=".bdmap"></activity>
+        <activity android:name=".calculator" />
+        <activity android:name=".compass" />
+        <activity android:name=".pedometer" />
+        <activity android:name=".device" />
+        <activity android:name=".sensors" />
+        <activity android:name=".contact.contact" />
+        <activity android:name=".weather" />
+        <activity android:name=".UserInfo.userPassModify" />
+        <activity android:name=".Main.forget_password" />
+        <activity android:name=".UserInfo.authUserPassStatusModify" />
+        <activity android:name=".UserInfo.authUserInfoManage" />
+        <activity android:name=".Main.userRegister" />
+        <activity android:name=".Main.serviceTerms" />
+        <activity android:name=".UserInfo.authUserInfoModify" />
+
+        <service
+            android:name=".MusicPlayer.musicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MusicPlayer.musicPlayer" />
+        <activity android:name=".userRate" />
+        <activity android:name=".UserInfo.profile_info" />
+        <activity android:name=".contact.contact_forResult2" />
+        <activity android:name=".UserInfo.profile_edit" />
+        <activity android:name=".home" />
+        <activity android:name=".Main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+    </application>
+
+</manifest>

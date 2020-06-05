@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ba9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/prof_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/back1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/profile_edit" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:background="#e0000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/moon" />
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageButton"
+        android:layout_marginTop="35dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:text="@string/name_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/sex"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sex_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/birthday"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/birthday_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/email"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/email_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/phone"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:text="@string/phone_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/address"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:text="@string/area_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/note"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/note_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+
+                android:text="@string/habit"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textHabit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_column="1"
+                android:layout_span="2"
+
+                android:text="@string/habit_default"
+                android:textAlignment="textStart"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/status"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="@string/status_default"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewManage"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:text="用户管理"
+                android:layout_span="3"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:visibility="invisible"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPassModify"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="退出账号"
+        />
+
+    <Button
+        android:id="@+id/buttonPassModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/table1"
+        android:layout_marginTop="15dp"
+        android:text="修改密码" />
+
+
+</RelativeLayout>
